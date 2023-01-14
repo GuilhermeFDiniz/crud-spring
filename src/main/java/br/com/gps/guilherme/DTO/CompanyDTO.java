@@ -1,11 +1,12 @@
 package br.com.gps.guilherme.DTO;
 
 import br.com.gps.guilherme.model.Company;
-
+import br.com.gps.guilherme.model.Company;
 import java.math.BigDecimal;
 import java.sql.Date;
 
 public class CompanyDTO {
+    private Integer id;
     private String cnpj = "";
     private String razao_social = "";
     private String nome_fantasia = "";
@@ -26,6 +27,33 @@ public class CompanyDTO {
     private String nome_socio = "";
     private String qualificacao_socio = "";
     private Date data_entrada_sociedade;
+
+    public CompanyDTO() {
+    }
+
+    public CompanyDTO(Company company) {
+        this.id = company.getId();
+        this.cnpj = company.getCnpj();
+        this.razao_social = company.getRazao_social();
+        this.nome_fantasia = company.getNome_fantasia();
+        this.capital_social = company.getCapital_social();
+        this.site = company.getSite();
+        this.mercado = company.getMercado();
+        this.cnae_fiscal = company.getCnae_fiscal();
+        this.cnae_fiscal_descricao = company.getCnae_fiscal_descricao();
+        this.email = company.getEmail();
+        this.ddd_telefone_1 = company.getDdd_telefone_1();
+        this.cep = company.getCep();
+        this.street = company.getStreet();
+        this.numero = company.getNumero();
+        this.neighborhood = company.getNeighborhood();
+        this.city = company.getCity();
+        this.state = company.getState();
+        this.complemento = company.getComplemento();
+        this.nome_socio = company.getNome_socio();
+        this.qualificacao_socio = company.getQualificacao_socio();
+        this.data_entrada_sociedade = company.getData_entrada_sociedade();
+    }
 
     public String getCnpj() {
         return cnpj;
@@ -185,5 +213,12 @@ public class CompanyDTO {
 
     public void setData_entrada_sociedade(Date data_entrada_sociedade) {
         this.data_entrada_sociedade = data_entrada_sociedade;
+    }
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 }
