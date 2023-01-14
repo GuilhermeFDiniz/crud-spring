@@ -1,4 +1,4 @@
-package br.com.gps.guilherme.controller.DTO;
+package br.com.gps.guilherme.DTO;
 
 import java.math.BigDecimal;
 import java.sql.Date;
