@@ -1,5 +1,7 @@
 package br.com.gps.guilherme.DTO;
 
+import br.com.gps.guilherme.model.Company;
+
 import java.math.BigDecimal;
 import java.sql.Date;
 
