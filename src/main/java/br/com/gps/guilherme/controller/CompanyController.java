@@ -24,4 +24,9 @@ public class CompanyController {
     public ResponseEntity<CompanyDTO> createCompany(@RequestBody CompanyDTO tutorial) {
         return new ResponseEntity<>(tutorial, HttpStatus.CREATED);
     }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<CompanyDTO> updateCompany(@PathVariable("id") int id, @RequestBody CompanyDTO tutorial) {
+        return new ResponseEntity<>(tutorial, HttpStatus.NO_CONTENT);
+    }
 }
