@@ -15,4 +15,8 @@ public class CompanyController {
     public ResponseEntity<CompanyDTO> getCompany(@PathVariable("id") int companyId) {
         return new ResponseEntity(new CompanyDTO(String.valueOf(companyId)), HttpStatus.OK);
     }
+    @DeleteMapping("/{id}")
+    public ResponseEntity deleteCompany(@PathVariable("id") int id) {
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
 }
