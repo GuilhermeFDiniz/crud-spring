@@ -19,4 +19,9 @@ public class CompanyController {
     public ResponseEntity deleteCompany(@PathVariable("id") int id) {
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
+
+    @PostMapping()
+    public ResponseEntity<CompanyDTO> createCompany(@RequestBody CompanyDTO tutorial) {
+        return new ResponseEntity<>(tutorial, HttpStatus.CREATED);
+    }
 }
