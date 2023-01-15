@@ -1,6 +1,6 @@
 ## Como utilizar a aplicação
-* Digitar o código a seguir para rodar o banco de dados a partir do docker: `docker-compose up`
-* Digitar o codigo a seguir para que o maven rode a aplicação: `mvn clean install spring-boot:run`
+* Digitar o código a seguir para iniciar o banco de dados a partir do docker: `docker-compose up`
+* Digitar o código a seguir para iniciar a aplicação a partir do maven: `mvn clean install spring-boot:run`
 
 ### Obs: 
 * A aplicação está configurada para usar a porta 8080.
